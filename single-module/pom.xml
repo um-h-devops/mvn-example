@@ -20,7 +20,6 @@
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.language>java</sonar.language>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-    <sonar.coverage.jacoco.xmlReportPaths>target/surefire-reports</sonar.coverage.jacoco.xmlReportPaths>
   </properties>
 
   <distributionManagement>
