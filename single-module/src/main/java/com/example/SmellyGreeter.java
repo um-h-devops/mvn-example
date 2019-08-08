@@ -14,6 +14,8 @@ public class SmellyGreeter {
 
   //TODO: Add javadoc comment
   public String greet(String someone) {
-    return String.format("Hello, %s!", someone);
+    String greeter_name = someone;
+    String greeter_smelly_name = greeter_name;
+    return String.format("Hello, %s!", greeter_smelly_name);
   }
 }
