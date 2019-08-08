@@ -16,6 +16,8 @@
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
     <sonar.sources>src/main</sonar.sources>
     <sonar.tests>src/test</sonar.tests>
+    <runSuite>**/Test*.class</runSuite>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.language>java</sonar.language>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     <sonar.coverage.jacoco.xmlReportPaths>target/surefire-reports</sonar.coverage.jacoco.xmlReportPaths>
@@ -115,6 +117,23 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.11</version>
+      </plugin>
+      <plugin>
+	<groupId>org.jacoco</groupId>
+	<artifactId>jacoco-maven-plugin</artifactId>
+	<version>0.8.4</version>
+	<configuration>
+		<destFile>${sonar.jacoco.reportPath}</destFile>
+		<append>true</append>
+	</configuration>
+	<executions>
+		<execution>
+			<id>agent</id>
+			<goals>
+				<goal>prepare-agent</goal>
+			</goals>
+		</execution>
+	</executions>
       </plugin>
 
       <plugin>
