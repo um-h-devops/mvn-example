@@ -9,15 +9,15 @@ public class SmellyGreeter {
    * This is a constructor.
    */
   public SmellyGreeter() {
+    // This is empty
 
   }
 
-  //TODO: Add javadoc comment
   public String greet(String someone) {
-    String greeter_name = someone;
-    greeter_name = "me";
-    greeter_name = "me";
-    greeter_name = someone;
+    String greeterName = someone;
+    greeterName = "me";
+    greeterName = "me";
+    greeterName = someone;
     return String.format("Hello, %s!", greeter_name);
   }
 }
