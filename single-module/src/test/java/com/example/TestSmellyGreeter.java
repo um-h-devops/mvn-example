@@ -8,13 +8,13 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertThat;
 import static org.junit.matchers.JUnitMatchers.containsString;
 
-public class TestGreeter {
+public class TestSmellyGreeter {
 
-  private Greeter greeter;
+  private SmellyGreeter greeter;
 
   @Before
   public void setup() {
-    greeter = new Greeter();
+    greeter = new SmellyGreeter();
   }
 
   @Test
