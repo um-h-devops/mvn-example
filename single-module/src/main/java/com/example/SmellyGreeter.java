@@ -18,6 +18,6 @@ public class SmellyGreeter {
     greeterName = "me";
     greeterName = "me";
     greeterName = someone;
-    return String.format("Hello, %s!", greeter_name);
+    return String.format("Hello, %s!", greeterName);
   }
 }
