@@ -14,10 +14,6 @@ public class SmellyGreeter {
   }
 
   public String greet(String someone) {
-    String greeterName = someone;
-    greeterName = "me";
-    greeterName = "me";
-    greeterName = someone;
-    return String.format("Hello, %s!", greeterName);
+    return String.format("Hello, %s!", someone);
   }
 }
