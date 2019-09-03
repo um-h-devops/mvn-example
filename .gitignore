@@ -2,3 +2,6 @@
 *.idea
 target
 *.kube*
+*.swp
+/.garden
+/error.log
