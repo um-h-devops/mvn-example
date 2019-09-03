@@ -1,0 +1,7 @@
+kind: Project
+name: mvn-example
+environments:
+  - name: local
+    providers: 
+      - name: local-kubernetes
+        context: minikube

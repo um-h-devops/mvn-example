@@ -1,0 +1,21 @@
+kind: Module
+description: Spring sample module
+type: container
+name: multi-module
+hotReload:
+  sync:
+    - target: /app/server
+      source: server
+    - target: /app/webapp
+      source: webapp
+    - target: /app/src
+      source: src
+services:
+  - name: multi-module
+    ports:
+      - name: http
+        containerPort: 8080
+        servicePort: 80
+    ingresses:
+      - path: /
+        port: http
